@@ -35,7 +35,7 @@ async function run() {
             const product = await productCollection.findOne(query);
             res.send(product)
         })
-
+        //crud method
         //post
         app.post('/product', async (req, res) => {
             const newProduct = req.body;
